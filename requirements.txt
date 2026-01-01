@@ -1,0 +1,42 @@
+
+channels:
+  - snowflake            # Prefer Snowflake’s Anaconda channel when available
+  - conda-forge
+  - defaults
+
+dependencies:
+  # --- Core runtime ---
+  - python=3.10          # Use a version supported by your Snowflake account
+  - pip                  # Keep pip available for extras
+
+  # --- Snowflake integration ---
+  - snowflake-snowpark-python=1.15.0         # Snowpark API for data access
+  - snowflake-connector-python=3.10.0        # If you also use the connector directly
+
+  # --- Streamlit UI (pin per best practice) ---
+  - streamlit=1.31.1
+
+  # --- Data wrangling ---
+  - pandas=2.2.2
+  - numpy=1.26.4
+  - pyarrow=14.0.2                           # Efficient columnar IO; useful with pandas
+
+  # --- Visualization ---
+  - altair=5.2.0                             # Default charts in Streamlit
+  - plotly=5.22.0                            # Interactive charts/maps
+
+  # --- Utilities ---
+  - requests=2.32.3
+  - python-dateutil=2.9.0
+  - pytz=2024.1
+  - cachetools=5.3.3                         # Simple memoization for expensive calls
+
+  # --- Optional ML/analytics (remove if not needed) ---
+  - scikit-learn=1.3.2
+
+  # --- Anything not in the Snowflake channel can go under pip ---
+  - pip:
+      - streamlit-aggrid==0.3.4.post1        # Rich data grids for tables
+      - tenacity==8.2.3                      # Robust retries for API calls
+      - typer==0.9.0                         # Handy CLIs if you have scripts
+``
