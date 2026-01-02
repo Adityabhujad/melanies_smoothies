@@ -1,6 +1,6 @@
 
-  snowflake-snowpark-python=1.15.0         # Snowpark API for data access
-  snowflake-connector-python=3.10.0        # If you also use the connector directly
+  snowflake-snowpark-python      # Snowpark API for data access
+  snowflake-connector-python     # If you also use the connector directly
 
   # --- Streamlit UI (pin per best practice) ---
   streamlit
