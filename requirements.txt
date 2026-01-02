@@ -1,10 +1,9 @@
 
-  # --- Snowflake integration ---
-  - snowflake-snowpark-python=1.15.0         # Snowpark API for data access
-  - snowflake-connector-python=3.10.0        # If you also use the connector directly
+  snowflake-snowpark-python=1.15.0         # Snowpark API for data access
+  snowflake-connector-python=3.10.0        # If you also use the connector directly
 
   # --- Streamlit UI (pin per best practice) ---
-  - streamlit=1.31.1
+  streamlit
 
   # --- Data wrangling ---
   - pandas=2.2.2
