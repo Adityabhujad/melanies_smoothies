@@ -29,4 +29,3 @@
       - streamlit-aggrid==0.3.4.post1        # Rich data grids for tables
       - tenacity==8.2.3                      # Robust retries for API calls
       - typer==0.9.0                         # Handy CLIs if you have scripts
-``
