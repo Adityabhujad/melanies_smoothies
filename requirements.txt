@@ -1,14 +1,4 @@
 
-channels:
-  - snowflake            # Prefer Snowflake’s Anaconda channel when available
-  - conda-forge
-  - defaults
-
-dependencies:
-  # --- Core runtime ---
-  - python=3.10          # Use a version supported by your Snowflake account
-  - pip                  # Keep pip available for extras
-
   # --- Snowflake integration ---
   - snowflake-snowpark-python=1.15.0         # Snowpark API for data access
   - snowflake-connector-python=3.10.0        # If you also use the connector directly
